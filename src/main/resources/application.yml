@@ -1,5 +1,5 @@
 server:
-  port: 5555
+  port: 8081
 eureka:
   instance:
     # 使用服务的IP而不是服务器名称，确保在容器环境下正常
@@ -12,3 +12,10 @@ eureka:
 spring:
   application:
     name: getway-zuul
+logging:
+  config: classpath:log4j2.xml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes
