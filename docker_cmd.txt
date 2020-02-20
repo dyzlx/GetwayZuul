@@ -1,0 +1,4 @@
+============[image build]===========
+docker build --rm -t getway_zuul_image .
+============[image run]===========
+docker run -d --name="getway_zuul" -p 18081:8081 -e DMS_DISCOVER_HOST=172.17.0.2 getway_zuul_image
