@@ -13,7 +13,7 @@ spring:
   application:
     name: getway-zuul
 logging:
-  config: classpath:log4j2.xml
+  file: /Volumes/DYZ-document/Program/X-CodeRunSpace/log/getwayservice/getway-zuul.log
 management:
   endpoints:
     web:
